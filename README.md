@@ -1,1 +1,1 @@
-# cypress-codefresh-example
+# cypress-codefresh-example [![Codefresh build status]( https://g.codefresh.io/api/badges/pipeline/bahmutov/Cypress%20Codefresh%20Example%2Fe2e?type=cf-2)]( https://g.codefresh.io/public/accounts/bahmutov/pipelines/new/602c1e1998e98171561bf43c)
