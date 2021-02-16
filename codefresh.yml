@@ -43,5 +43,8 @@ steps:
       - "npm ci"
       - "npx cypress verify"
       - "npx cypress info"
-      - "npx cypress run --record"
+      # try several groups in the same build
+      # have to use custom build id for now
+      - "npx cypress run --record --parallel --group first --ci-build-id $CF_BUILD_ID"
+      - "npx cypress run --record --parallel --group second --spec cypress/integration/spec-b.js --ci-build-id $CF_BUILD_ID"
     stage: "test"
