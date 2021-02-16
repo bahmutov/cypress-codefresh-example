@@ -37,8 +37,11 @@ steps:
     image: "cypress/base:12.19.0" # The image in which command will be executed
     working_directory: "${{clone}}" # Running command where code cloned
     commands:
+      # https://codefresh.io/docs/docs/codefresh-yaml/variables/#using-codefresh-variables-in-your-pipelines
+      # print all environment variables that start with "CF_"
+      - "npx @bahmutov/print-env CF_"
       - "npm ci"
       - "npx cypress verify"
       - "npx cypress info"
+      - "npx cypress run"
     stage: "test"
-
