@@ -43,5 +43,5 @@ steps:
       - "npm ci"
       - "npx cypress verify"
       - "npx cypress info"
-      - "npx cypress run"
+      - "npx cypress run --record"
     stage: "test"
