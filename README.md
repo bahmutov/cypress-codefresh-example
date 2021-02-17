@@ -2,6 +2,9 @@
 
 See [codefresh.yml](codefresh.yml)
 
+- [ ] shows how to cache Node modules and Cypress binary
+- [ ] shows how to run jobs in parallel
+
 ## Relevant links
 
 - [Cypress CodeFresh CI variables issue #4609](https://github.com/cypress-io/cypress/issues/4609)
